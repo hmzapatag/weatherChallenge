@@ -39,11 +39,11 @@ const Board = ({loadingData, showData, weather}) => {
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body text-start mt-2">
-                                        <h5 className="card-text">Temperatura máxima: {(weather.main.temp_max - 273.15).toFixed(1)}ºC</h5>
-                                        <h5 className="card-text">Temperatura mínima: {(weather.main.temp_min - 273.15).toFixed(1)}ºC</h5>
-                                        <h5 className="card-text">sensación térmica: {(weather.main.feels_like- 273.15).toFixed(1)}ºC</h5>
+                                        <h5 className="card-text">Temperatura superior: {(weather.main.temp_max - 273.15).toFixed(1)}ºC</h5>
+                                        <h5 className="card-text">Temperatura inferior: {(weather.main.temp_min - 273.15).toFixed(1)}ºC</h5>
                                         <h5 className="card-text">Humedad: {weather.main.humidity}%</h5>
-                                        <h5 className="card-text">Velocidad del viento: {weather.wind.speed}m/s</h5>
+                                        <h5 className="card-text">Sensación térmica: {(weather.main.feels_like- 273.15).toFixed(1)}ºC</h5>
+                                        <h5 className="card-text">Velocidad eólica: {weather.wind.speed}m/s</h5>
                                     </div>
                                     <hr/>
 
